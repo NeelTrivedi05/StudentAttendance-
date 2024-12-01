@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Management System</h1>
+        
+        <div id="addStudentSection">
+            <h2>Add Student</h2>
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="text" id="studentRoll" placeholder="Roll Number" required>
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div id="addSubjectSection">
+            <h2>Add Subject</h2>
+            <input type="text" id="subjectName" placeholder="Subject Name" required>
+            <button onclick="addSubject()">Add Subject</button>
+        </div>
+
+        <div id="timetableSection">
+            <h2>Timetable</h2>
+            <!-- Timetable implementation -->
+        </div>
+
+        <div id="attendanceSection">
+            <h2>Mark Attendance</h2>
+            <select id="classSelector" onchange="showStudentsList()">
+                <!-- Populate classes dynamically -->
+            </select>
+            <ul id="studentsList"></ul>
+            <button onclick="submitAttendance()">Submit Attendance</button>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
